@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "Roboto", sans-serif;
+}
+.search_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    gap: 20px;
+}
+.search_content{
+    display: flex;
+     width: 50%;
+     max-width: 60rem;
+}
+#username{
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+#username:focus-visible{
+    outline: 1px solid purple;
+} 
+.profile_button{
+    padding: 0.5rem 1rem;
+    background-color: purple;
+    color: white;
+    border: none;
+}
+.profile_button:hover{
+    background-color: rgb(41, 1, 41);
+}
+.profile_button:active{
+    background-color: rgb(209, 19, 209);
+}
+
+/* For Card */
+#profile_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_box{
+    width: 90%;
+    max-width: 78rem;
+    padding: 4rem 2rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in;
+}
+.profile_box:hover{
+    transform: rotate(-2deg) scale(1.01);
+    transition: 0.5s ease-in;
+}
+.avatar{
+    height: 10rem;
+    width: 10rem;
+}
+.avatar img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.top-section{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.self h2{
+    font-size: 1.4rem;
+}
+.about{
+    margin: 2rem;
+}
+.status{
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+.status_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
